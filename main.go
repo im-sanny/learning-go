@@ -13,11 +13,15 @@ func getNumbers(num1 int, num2 int) (int, int) {
 	return sum, mul
 }
 
+func printSomething() {
+	fmt.Println("Education must be free!")
+}
+
+func greetings(name string) {
+	fmt.Println("Hello Habib vai, thanks for the course,", name)
+}
+
 func main() {
-	a := 10
-	b := 20
-	p, q := getNumbers(a, b)
-	fmt.Println(p)
-	fmt.Println(q)
-	fmt.Println(getNumbers(a,b))
+	printSomething()
+	greetings("Sanny")
 }
