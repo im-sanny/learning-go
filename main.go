@@ -14,7 +14,6 @@ func getUserName() string {
 }
 
 func getTwoNumber() (int, int) {
-
 	var num1 int
 	var num2 int
 	fmt.Println("Enter the first number -")
@@ -47,5 +46,4 @@ func main() {
 	sum := add(num1, num2)
 	display(name, sum)
 	farewellMessage()
-
 }
