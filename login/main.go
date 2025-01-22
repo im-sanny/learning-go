@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func welcome() {
 	fmt.Println("Welcome!")
@@ -27,12 +29,18 @@ func userPassword() string {
 	return pass
 }
 
-
+func addCaptcha(x int, y int) int {
+	sum := x + y
+	return sum
+}
 
 func main() {
 	welcome()
-	userName()
-	userMail()
-	userPassword()
+	name := userName()
+	mail := userMail()
+	pass := userPassword()
+	total := addCaptcha(4, 7)
+	fmt.Scanln(total)
+	fmt.Println(name, mail, pass)
 
 }
