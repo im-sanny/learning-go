@@ -29,7 +29,17 @@ func userPassword() string {
 	return pass
 }
 
-func addCaptcha(x int, y int) int {
+func getTwoNumber() (int, int) {
+	var x int
+	var y int
+	fmt.Println("Enter first random number -")
+	fmt.Scanln(&x)
+	fmt.Println("Enter second random number -")
+	fmt.Scanln(&y)
+	return x, y
+}
+
+func add(x int, y int) int {
 	sum := x + y
 	return sum
 }
@@ -39,8 +49,12 @@ func main() {
 	name := userName()
 	mail := userMail()
 	pass := userPassword()
-	total := addCaptcha(4, 7)
-	fmt.Scanln(total)
-	fmt.Println(name, mail, pass)
-
+	num1, num2 := getTwoNumber()
+	total := add(num1, num2)
+	fmt.Println(
+		"name:", name,
+		"email:", mail,
+		"password:", pass,
+		"total:", total,
+	)
 }
