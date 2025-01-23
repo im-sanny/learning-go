@@ -2,8 +2,7 @@ package mathlib
 
 import "fmt"
 
-func add(x int, y int) int {
+func Add(x int, y int) {
 	sum := x + y
 	fmt.Println(sum)
-	return sum
 }

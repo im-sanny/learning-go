@@ -1,5 +1,12 @@
 package main
 
+import (
+	"fmt"
+	"example.com/mathlib"
+)
+
 func main() {
-	add(3, 6)
+	fmt.Println("showing custom package")
+	mathlib.Add(6, 7)
+
 }
