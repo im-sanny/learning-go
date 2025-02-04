@@ -23,6 +23,13 @@ func main() {
 		e := c * d
 		fmt.Println(e)
 	}(7, 9)
+
+	// function expression or assign function in variable
+	add := func(a int, b int) {
+		c := a + b
+		fmt.Println(c)
+	}
+	add(3, 5)
 }
 
 func init() {
