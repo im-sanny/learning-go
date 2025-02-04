@@ -21,12 +21,12 @@ func main() {
 	//Immediately Invoked Function Expression
 	// IIFE
 
+	// a := 40     //expression
+	// if a > 20 { //if block
+	// 	fmt.Println("40 is grater than 20")
+	// }
+	
 	sum()
-
-	a := 40     //expression
-	if a > 20 { //if block
-		fmt.Println("40 is grater than 20")
-	}
 
 	func(c int, d int) {
 		e := c * d
