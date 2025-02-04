@@ -7,12 +7,21 @@ import "fmt"
 // 	fmt.Println(a + b)
 // }
 
+func sum() {
+	add(3, 5)
+}
+func add(a, b int) {
+	fmt.Println(a + b)
+}
+
 func main() {
 	// we invoke the add function here
 	// add(7, 7)
 	// anonymous function
 	//Immediately Invoked Function Expression
 	// IIFE
+
+	sum()
 
 	a := 40     //expression
 	if a > 20 { //if block
@@ -25,11 +34,11 @@ func main() {
 	}(7, 9)
 
 	// function expression or assign function in variable
-	add := func(a int, b int) {
+	plus := func(a int, b int) {
 		c := a + b
 		fmt.Println(c)
 	}
-	add(3, 5)
+	plus(3, 5)
 }
 
 func init() {
