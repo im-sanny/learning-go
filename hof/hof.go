@@ -14,6 +14,10 @@ func processOperation(a int, b int, op func(p int, q int)) {
 	op(a, b)
 }
 
+func call() func(x int, y int) {
+	return add
+}
+
 func add(x int, y int) {
 	z := x + y
 	fmt.Println(z)
@@ -21,4 +25,7 @@ func add(x int, y int) {
 
 func main() {
 	processOperation(3, 7, add)
+
+	sum := call()
+	sum(8, 9)
 }
