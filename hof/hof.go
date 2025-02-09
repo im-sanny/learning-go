@@ -10,8 +10,9 @@ any one of the following 3
 3. both
 */
 
-func processOperation(a int, b int, op func(p int, q int)) {
+func processOperation(a int, b int, op func(p int, q int)) func(p int, q int) {
 	op(a, b)
+	return add
 }
 
 func call() func(x int, y int) {

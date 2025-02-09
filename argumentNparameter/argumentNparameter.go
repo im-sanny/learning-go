@@ -18,7 +18,9 @@ func main() {
 	ii. anonymous function
 	iii. IIFE
 	iv.function expression
-3. Higher order function
+3. Higher order function or first class function
+4. callback function
+5. first class citizen -> (data assigned in variable)
 
 functional paradigm -> haskel, racket
 
