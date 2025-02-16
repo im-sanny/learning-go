@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func welcomeMessage() {
 	fmt.Println("Welcome to the application")
@@ -11,6 +13,13 @@ func getUserName() string {
 	fmt.Println("Please enter ur name -")
 	fmt.Scanln(&name)
 	return name
+}
+
+func getEmail() string {
+	var mail string
+	fmt.Println("Please enter you email - ")
+	fmt.Scanln(&mail)
+	return mail
 }
 
 func getTwoNumber() (int, int) {
@@ -28,8 +37,9 @@ func add(num1 int, num2 int) int {
 	return sum
 }
 
-func display(name string, sum int) {
+func display(name string, mail string, sum int) {
 	fmt.Println("Hello,", name)
+	fmt.Println("Email,", mail)
 	fmt.Println("Summation =", sum)
 }
 
@@ -42,9 +52,10 @@ func main() {
 	// Print welcome message
 	welcomeMessage()
 	name := getUserName()
+	mail := getEmail()
 	num1, num2 := getTwoNumber()
 	sum := add(num1, num2)
-	display(name, sum)
+	display(name, mail, sum)
 	farewellMessage()
 }
 
