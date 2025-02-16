@@ -47,3 +47,7 @@ func main() {
 	display(name, sum)
 	farewellMessage()
 }
+
+func init() {
+	fmt.Println("I am init func, I will execute first")
+}
