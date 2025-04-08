@@ -22,7 +22,7 @@ func main() {
 4. callback function
 5. first class citizen -> (data assigned in variable)
 
-functional paradigm -> haskel, racket
+functional paradigm -> haskell, racket
 
 math -> logic(discrete mathematics)
 
@@ -47,5 +47,5 @@ Rules: All customer must pay their pizza bills
 
 ### Higher order logic
 Any rules that applies on all customer must apply on Mutul also
-a rule: customer isn't can't give tips in this restaurant
+a rule: customer can't give tips in this restaurant
 */

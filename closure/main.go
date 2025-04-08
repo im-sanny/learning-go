@@ -7,7 +7,7 @@ const a = 10
 var p = 100
 
 func outer() func() {
-	money := 2000
+	money := 100
 	age := 24
 
 	fmt.Println("age =", age)
