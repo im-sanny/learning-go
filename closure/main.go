@@ -8,9 +8,9 @@ var p = 100
 
 func outer() func() {
 	money := 100
-	age := 24
+	age := 30
 
-	fmt.Println("age =", age)
+	fmt.Println("Age =", age)
 
 	show := func() {
 		money = money + a + p
@@ -27,10 +27,6 @@ func call() {
 	incr2 := outer()
 	incr2()
 	incr2()
-}
-
-func main() {
-	call()
 }
 
 func init() {
