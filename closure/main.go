@@ -29,6 +29,35 @@ func call() {
 	incr2()
 }
 
+func main() {
+	call()
+}
+
 func init() {
 	fmt.Println("==Bank==")
 }
+
+/*
+2 phase:
+ 1. compilation (compile time)
+ 2. execution (run time)
+
+
+	********* Compile Phase *********
+
+	** code segment **
+	a = 10
+	outer = func() {...}
+	outerAnonymous = func() {...}
+	call = func() {}
+	main = func(){}
+	init = func(){}
+
+
+
+
+ go run main.go => compile it => main => ./main
+ go build main.go => compile it => /main
+
+ ./main
+*/
